@@ -1,6 +1,6 @@
 export default {
     title: 'webdoc',
     description: 'Just playing around.',
-    base:'/blog/'
+    base:'/myBlog/'
   }
   
