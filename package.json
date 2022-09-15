@@ -9,17 +9,11 @@
     "docs:serve": "vitepress serve docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "lu-jm <lu-jm@qq.com>",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "1.0.0-alpha.13",
     "vue": "^3.2.39"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
-  }  
+  "repository": "https://github.com/lu-jm/myBlog.git"
 }
