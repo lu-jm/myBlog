@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e}from"./app.76371b75.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/basic/map.md"}'),r={name:"javascript/basic/map.md"};function s(c,o,p,n,i,m){return e(),t("div")}const f=a(r,[["render",s]]);export{d as __pageData,f as default};
