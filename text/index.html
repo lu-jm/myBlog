@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <input type="text" oninput="inputChange()">
+    <script>
+        function antiShake(fnc, timeout) {
+            console.log('ddd');
+            let timer = null
+            return function () {
+                if (timer) {
+                    clearTimeout(timer)
+                    timer = null
+                }
+                timer = setTimeout(fnc(), timeout);
+            }
+        }
+        function inputChange() {
+            console.log('s');
+            antiShake(function(){
+                console.log('aaaa');
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>

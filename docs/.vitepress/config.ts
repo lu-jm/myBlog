@@ -16,6 +16,13 @@ export default {
               { text: 'Object', link: '/javascript/basic/object' },
               { text: 'Arrary', link: '/javascript/basic/arrary' }
             ]
+          },{
+            text:'Other',
+            collapsible:true,
+            collapsed:false,
+            items:[
+              {text:'防抖和节流',link:'/javascript/other/shake_throttle'}
+            ]
           }
         ]
       }
