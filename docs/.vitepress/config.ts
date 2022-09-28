@@ -14,7 +14,9 @@ export default {
             text: 'basic',
             items: [
               { text: 'Object', link: '/javascript/basic/object' },
-              { text: 'Arrary', link: '/javascript/basic/arrary' }
+              { text: 'Arrary', link: '/javascript/basic/arrary' },
+              { text: 'Map', link: '/javascript/basic/map' },
+              { text: 'Map', link: '/javascript/basic/map' },
             ]
           },{
             text:'Other',

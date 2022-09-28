@@ -10,8 +10,25 @@
 </head>
 
 <body>
-    <input type="text" oninput="inputChange()">
+    <input id="input" type="text">
+    <button id="btn">click</button>
     <script>
+        function throttle(fnc, timeout) {
+            let timer = null
+            return function () {
+                if (!timer) {
+                    fnc()
+                    timer = setTimeout(() => {
+                        clearTimeout(timer)
+                        timer = null
+                    }, timeout)
+                }
+            }
+        }
+        function clickChange() {
+            console.log('s')
+        }
+        document.getElementById('btn').addEventListener('click', throttle(clickChange, 1000))
         function antiShake(fnc, timeout) {
             console.log('ddd');
             let timer = null
@@ -20,15 +37,13 @@
                     clearTimeout(timer)
                     timer = null
                 }
-                timer = setTimeout(fnc(), timeout);
+                timer = setTimeout(fnc, timeout);
             }
         }
         function inputChange() {
             console.log('s');
-            antiShake(function(){
-                console.log('aaaa');
-            }, 1000)
         }
+        document.getElementById('input').addEventListener('input', antiShake(inputChange, 1000))
     </script>
 </body>
 
