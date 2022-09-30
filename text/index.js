@@ -1,11 +1,23 @@
-const map = new Map([['a', '111'], ['b', 12], [12, 'cc']])
-
-map.forEach((value, key, map) => {
-    if (key === 'aaa') {
-        value = '222'
+function Count() {
+    let num = 0
+    function changeNum(val) {
+        num += val
     }
-    console.log(`map[${key}]=${value}`);
-})
+    return {
+        increment: function () {
+            changeNum(1);
+        },
+        decrement: function () {
+            changeNum(-1);
+        },
+        value: function () {
+            return num;
+        }
+    }
+}
 
-console.log(map);
+const count = Count()
+console.log(count.value());
 
+count.increment()
+console.log(count.value());

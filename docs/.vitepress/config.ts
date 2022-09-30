@@ -16,14 +16,15 @@ export default {
               { text: 'Object', link: '/javascript/basic/object' },
               { text: 'Arrary', link: '/javascript/basic/arrary' },
               { text: 'Map', link: '/javascript/basic/map' },
-              { text: 'Map', link: '/javascript/basic/map' },
+              { text: 'Iterator', link: '/javascript/basic/iterator' },
             ]
           },{
             text:'Other',
             collapsible:true,
             collapsed:false,
             items:[
-              {text:'防抖和节流',link:'/javascript/other/shake_throttle'}
+              {text:'防抖和节流',link:'/javascript/other/shake_throttle'},
+              {text:'闭包',link:'/javascript/other/closure'},
             ]
           }
         ]

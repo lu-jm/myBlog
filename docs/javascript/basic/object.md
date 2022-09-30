@@ -82,3 +82,25 @@ console.log(Object.entries(obj));
 ```
 :::
 
+## Object.fromEntries()
+### 参数
+`entries`  
+Iterable可迭代对象，类似于[Map](./map.md)，[Array](./arrary.md)  
+
+### 返回值
+一个由该迭代对象条目提供对应属性的新对象
+:::details
+```javascript
+ObjectConstructor.fromEntries<T = any>(entries: Iterable<readonly [PropertyKey, T]>): {
+    [k: string]: T;
+} (+1 overload)
+
+const map = new Map([
+    ['a', '1'], ['b', 2]
+])
+
+console.log(Object.fromEntries(map));
+// { a: '1', b: 2 }
+```
+:::
+
