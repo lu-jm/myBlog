@@ -23,5 +23,8 @@
     "vitepress": "1.0.0-alpha.13",
     "vue": "^3.2.39"
   },
-  "repository": "https://github.com/lu-jm/myBlog.git"
+  "repository": "https://github.com/lu-jm/myBlog.git",
+  "dependencies": {
+    "codemirror": "^6.0.1"
+  }
 }
