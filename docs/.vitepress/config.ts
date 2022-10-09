@@ -5,9 +5,10 @@ export default {
   themeConfig: {
     siteTitle: 'myBlog',
     logo: '/logo.png',
-    nav:[
-      {text:'javascript',link:'/javascript/basic/object'},
-      {text:'css',link:'/css'}
+    nav: [
+      { text: 'javascript', link: '/javascript/basic/object' },
+      { text: 'css', link: '/css' },
+      { text: '前端问题总结', link: '/question/performance' },
     ],
     socialLinks: [
       {
@@ -40,6 +41,11 @@ export default {
               { text: '微任务', link: '/javascript/other/microtasks' },
             ]
           }
+        ]
+      }, {
+        text: '前端问题总结',
+        items: [
+          { text: '前端性能优化', link: '/question/performance' }
         ]
       }
     ],
