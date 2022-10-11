@@ -17,38 +17,42 @@ export default {
         }, link: 'https://github.com/lu-jm/myBlog'
       }
     ],
-    sidebar: [
-      {
-        text: 'JavaScript',
-        collapsible: true,
-        collapsed: false,
-        items: [
-          {
-            text: '基础',
-            items: [
-              { text: 'Object', link: '/javascript/basic/object' },
-              { text: 'Arrary', link: '/javascript/basic/arrary' },
-              { text: 'Map', link: '/javascript/basic/map' },
-              { text: 'Iterator', link: '/javascript/basic/iterator' },
-            ]
-          }, {
-            text: '常见问题',
-            collapsible: true,
-            collapsed: false,
-            items: [
-              { text: '防抖和节流', link: '/javascript/other/shake_throttle' },
-              { text: '闭包', link: '/javascript/other/closure' },
-              { text: '微任务', link: '/javascript/other/microtasks' },
-            ]
-          }
-        ]
-      }, {
+    sidebar: {
+      '/javascript': [
+        {
+          text: 'JavaScript',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              text: '基础',
+              items: [
+                { text: 'Object', link: '/javascript/basic/object' },
+                { text: 'Arrary', link: '/javascript/basic/arrary' },
+                { text: 'Map', link: '/javascript/basic/map' },
+                { text: 'Iterator', link: '/javascript/basic/iterator' },
+                { text: 'String', link: '/javascript/basic/string' },
+              ]
+            }, {
+              text: '常见问题',
+              collapsible: true,
+              collapsed: false,
+              items: [
+                { text: '防抖和节流', link: '/javascript/other/shake_throttle' },
+                { text: '闭包', link: '/javascript/other/closure' },
+                { text: '微任务', link: '/javascript/other/microtasks' },
+              ]
+            }
+          ]
+        },
+      ],
+      '/question': [{
         text: '前端问题总结',
         items: [
           { text: '前端性能优化', link: '/question/performance' }
         ]
-      }
-    ],
+      }]
+    },
     smoothScroll: true,
     editLink: {
       pattern: 'https://github.com/lu-jm/myBlog/tree/main/docs',
