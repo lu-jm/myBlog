@@ -9,6 +9,7 @@ export default {
       { text: 'javascript', link: '/javascript/basic/object' },
       { text: 'css', link: '/css' },
       { text: '前端问题总结', link: '/question/performance' },
+      { text: 'playground', link: '/playground/index' },
     ],
     socialLinks: [
       {
@@ -51,7 +52,15 @@ export default {
         items: [
           { text: '前端性能优化', link: '/question/performance' }
         ]
-      }]
+      }],
+      // 'playground':[
+      //   {
+      //     text:'playground',
+      //     items:[
+      //       {text:'index',link:'/playground/index'}
+      //     ]
+      //   }
+      // ]
     },
     smoothScroll: true,
     editLink: {
